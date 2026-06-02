@@ -4,11 +4,11 @@ import { Copy, Play, Volume2 } from 'lucide-react';
 export default function ScriptV1Reference() {
   const [copied, setCopied] = useState(false);
 
-  const scriptText = `Hi [First Name], it's [Your Name]. I work with warehouse and logistics operators in Houston on facility strategy—whether that's finding better locations or optimizing what you've already got. I've worked with some solid companies similar to yours doing exactly that. Do you have a quick minute?`;
+  const scriptText = `Hi [First Name], it's [Your Name]. I talk to warehouse operators in Houston pretty regularly, and most of them are dealing with facility costs eating into margin—whether that's space constraints or overpaying on their current lease. Is that something you're wrestling with right now?`;
 
-  const followUpQualified = `Perfect. So the reason I'm calling—I help operators either find better space that gives you more margin, or if you're locked in, we negotiate better terms. What does your situation look like right now?`;
+  const followUpQualified = `Got it. So what we typically do is either find better space that actually saves you money month-to-month, or if you're locked in, we renegotiate and get you better terms. Where are you at with it right now?`;
 
-  const followUpNotInterested = `No worries. If that changes or if you know someone on your team dealing with facility costs, I'd be grateful for an intro. My focus is just helping operators get better deals on space.`;
+  const followUpNotInterested = `No worries. But if that ever becomes a priority for you or someone on your team—whether it's finding cheaper space or renegotiating your lease—just think of me. That's literally what we do.`;
 
   const handleCopy = (text) => {
     navigator.clipboard.writeText(text);
@@ -48,10 +48,10 @@ export default function ScriptV1Reference() {
           <Play className="w-4 h-4" /> Delivery Tips
         </h3>
         <ul className="space-y-2 text-sm text-slate-300">
-          <li>✓ Natural pace — like you're talking to a peer</li>
-          <li>✓ Genuine curiosity, not a pitch</li>
-          <li>✓ Acknowledge what they do, show you've done similar work</li>
-          <li>✓ Stop and listen after the ask</li>
+          <li>✓ Lead with the problem they're facing, not your service</li>
+          <li>✓ Ask about their specific situation, not their time</li>
+          <li>✓ Sound like you're solving an issue, not making a pitch</li>
+          <li>✓ Listen more than you talk</li>
         </ul>
       </div>
 
@@ -91,8 +91,8 @@ export default function ScriptV1Reference() {
           <p className="text-slate-400 text-xs">Duration</p>
         </div>
         <div>
-          <p className="text-blue-300 font-bold text-2xl">Authentic</p>
-          <p className="text-slate-400 text-xs">Tone</p>
+          <p className="text-blue-300 font-bold text-2xl">Problem</p>
+          <p className="text-slate-400 text-xs">Focused</p>
         </div>
         <div>
           <p className="text-blue-300 font-bold text-2xl">2 Ask</p>
