@@ -5,6 +5,7 @@ import DealPipeline from './DealPipeline';
 import ScriptProgress from './ScriptProgress';
 import WeeklyMetrics from './WeeklyMetrics';
 import ScriptV1Reference from './ScriptV1Reference';
+import ScriptV2Receptionist from './ScriptV2Receptionist';
 import SystemIntegrationHub from './SystemIntegrationHub';
 
 export default function CREsalesDashboard() {
@@ -45,9 +46,10 @@ export default function CREsalesDashboard() {
           <SystemIntegrationHub />
         </div>
 
-        {/* Script Reference - Cold Call Template */}
-        <div className="mb-8">
+        {/* Scripts - Cold Call Templates */}
+        <div className="space-y-6 mb-8">
           <ScriptV1Reference />
+          <ScriptV2Receptionist />
         </div>
 
         {/* Top Section: Call Metrics and Confidence */}
