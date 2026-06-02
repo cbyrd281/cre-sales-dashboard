@@ -6,6 +6,7 @@ import ScriptProgress from './ScriptProgress';
 import WeeklyMetrics from './WeeklyMetrics';
 import CREQuickActions from './CREQuickActions';
 import ScriptV1Reference from './ScriptV1Reference';
+import SystemIntegrationHub from './SystemIntegrationHub';
 
 export default function CREsalesDashboard() {
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -40,7 +41,12 @@ export default function CREsalesDashboard() {
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 py-8">
-        {/* Script Reference - Top Priority */}
+        {/* System Integration Hub - Central Command */}
+        <div className="mb-8">
+          <SystemIntegrationHub />
+        </div>
+
+        {/* Script Reference - Cold Call Template */}
         <div className="mb-8">
           <ScriptV1Reference />
         </div>
@@ -98,7 +104,7 @@ export default function CREsalesDashboard() {
 
           <div className="mt-8 text-center">
             <p className="text-slate-500 text-sm">
-              🚀 Dashboard deployed May 31 | Agent monitoring live | System setup queued Jun 1
+              🚀 Live Dashboard • 50 Prospects Loaded • 4 Habits Tracking • 6-Week Mastery Protocol
             </p>
           </div>
         </footer>
