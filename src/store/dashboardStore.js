@@ -4,42 +4,42 @@ const useDashboardStore = create((set) => ({
   // Call metrics
   callsToday: 0,
   callsThisWeek: 0,
-  connectionRate: 0.35,
+  connectionRate: 0.30,
   meetingsSet: 0,
-  conversionRate: 0.12,
-  
+  conversionRate: 0.15,
+
   // Confidence
-  confidenceRating: 7,
+  confidenceRating: 6,
   confidenceLog: [],
-  weeklyTrend: [5, 5.5, 6, 6.5, 7, 7, 7],
-  
+  weeklyTrend: [6, 6, 6.5, 6.5, 7, 7, 7.5],
+
   // Deal pipeline
-  prospectCount: 45,
-  qualifiedCount: 18,
-  presentingCount: 8,
-  negotiatingCount: 3,
-  closedCount: 2,
-  prospectValue: 450000,
-  qualifiedValue: 180000,
-  presentingValue: 120000,
-  negotiatingValue: 60000,
-  closedValue: 50000,
-  
+  prospectCount: 50,
+  qualifiedCount: 0,
+  presentingCount: 0,
+  negotiatingCount: 0,
+  closedCount: 0,
+  prospectValue: 0,
+  qualifiedValue: 0,
+  presentingValue: 0,
+  negotiatingValue: 0,
+  closedValue: 0,
+
   // Script progress
   scriptVersion: 1,
   scriptVersions: [
-    { version: 1, status: 'current', recordings: 0, feedback: 'Initial script' },
+    { version: 1, status: 'current', recordings: 0, feedback: 'Professional, authentic tone for warehouse operators' },
     { version: 2, status: 'upcoming', recordings: 0, feedback: '' },
     { version: 3, status: 'upcoming', recordings: 0, feedback: '' },
     { version: 4, status: 'upcoming', recordings: 0, feedback: '' },
     { version: 5, status: 'upcoming', recordings: 0, feedback: '' },
   ],
-  
+
   // Weekly metrics
   dailyMetrics: [
-    { day: 'Mon', calls: 8, connections: 3, meetings: 1, conversions: 0 },
-    { day: 'Tue', calls: 10, connections: 3, meetings: 1, conversions: 0 },
-    { day: 'Wed', calls: 12, connections: 4, meetings: 2, conversions: 0 },
+    { day: 'Mon', calls: 0, connections: 0, meetings: 0, conversions: 0 },
+    { day: 'Tue', calls: 0, connections: 0, meetings: 0, conversions: 0 },
+    { day: 'Wed', calls: 0, connections: 0, meetings: 0, conversions: 0 },
     { day: 'Thu', calls: 0, connections: 0, meetings: 0, conversions: 0 },
     { day: 'Fri', calls: 0, connections: 0, meetings: 0, conversions: 0 },
   ],

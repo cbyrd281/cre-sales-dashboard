@@ -4,11 +4,11 @@ import { Copy, Play, Volume2 } from 'lucide-react';
 export default function ScriptV1Reference() {
   const [copied, setCopied] = useState(false);
 
-  const scriptText = `Hi [First Name], this is [Your Name]. I work with warehouse operators and logistics companies in the Houston area who are looking to optimize their supply chain and real estate costs. I've been helping companies like [Similar Company] reduce their operational costs by identifying better warehouse locations and negotiating space more effectively. I know you're busy—do you have 30 seconds? I have an idea that might be relevant.`;
+  const scriptText = `Hi [First Name], it's [Your Name]. I work with warehouse and logistics operators in Houston on facility strategy—whether that's finding better locations or optimizing what you've already got. I've worked with some solid companies similar to yours doing exactly that. Do you have a quick minute?`;
 
-  const followUpQualified = `Great! I work with warehouse operators looking to relocate or optimize their current space. Do you have facility needs we should talk about?`;
+  const followUpQualified = `Perfect. So the reason I'm calling—I help operators either find better space that gives you more margin, or if you're locked in, we negotiate better terms. What does your situation look like right now?`;
 
-  const followUpNotInterested = `No problem. Do you know any warehouse operators or logistics companies in Houston looking for better space? I'd love a quick intro.`;
+  const followUpNotInterested = `No worries. If that changes or if you know someone on your team dealing with facility costs, I'd be grateful for an intro. My focus is just helping operators get better deals on space.`;
 
   const handleCopy = (text) => {
     navigator.clipboard.writeText(text);
@@ -24,7 +24,7 @@ export default function ScriptV1Reference() {
           Script v1: Cold Call Opening
         </h2>
         <span className="text-xs bg-blue-900 text-blue-200 px-3 py-1 rounded-full font-semibold">
-          15-20 sec
+          ~15 sec
         </span>
       </div>
 
@@ -48,10 +48,10 @@ export default function ScriptV1Reference() {
           <Play className="w-4 h-4" /> Delivery Tips
         </h3>
         <ul className="space-y-2 text-sm text-slate-300">
-          <li>✓ Speak at conversational pace (not rushed)</li>
-          <li>✓ Pause after CTA — wait for response</li>
-          <li>✓ Confident, helpful tone (not salesy)</li>
-          <li>✓ Total time: 15–20 seconds</li>
+          <li>✓ Natural pace — like you're talking to a peer</li>
+          <li>✓ Genuine curiosity, not a pitch</li>
+          <li>✓ Acknowledge what they do, show you've done similar work</li>
+          <li>✓ Stop and listen after the ask</li>
         </ul>
       </div>
 
@@ -87,16 +87,16 @@ export default function ScriptV1Reference() {
       {/* Quick Stats */}
       <div className="mt-6 pt-6 border-t border-slate-700 grid grid-cols-3 gap-4 text-center">
         <div>
-          <p className="text-blue-300 font-bold text-2xl">15-20</p>
-          <p className="text-slate-400 text-xs">Seconds</p>
+          <p className="text-blue-300 font-bold text-2xl">~15s</p>
+          <p className="text-slate-400 text-xs">Duration</p>
         </div>
         <div>
-          <p className="text-blue-300 font-bold text-2xl">v1</p>
-          <p className="text-slate-400 text-xs">Version</p>
+          <p className="text-blue-300 font-bold text-2xl">Authentic</p>
+          <p className="text-slate-400 text-xs">Tone</p>
         </div>
         <div>
-          <p className="text-blue-300 font-bold text-2xl">+4</p>
-          <p className="text-slate-400 text-xs">Follow-ups</p>
+          <p className="text-blue-300 font-bold text-2xl">2 Ask</p>
+          <p className="text-slate-400 text-xs">Paths</p>
         </div>
       </div>
     </div>

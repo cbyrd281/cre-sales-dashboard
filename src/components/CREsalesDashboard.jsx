@@ -4,7 +4,6 @@ import ConfidenceTracker from './ConfidenceTracker';
 import DealPipeline from './DealPipeline';
 import ScriptProgress from './ScriptProgress';
 import WeeklyMetrics from './WeeklyMetrics';
-import CREQuickActions from './CREQuickActions';
 import ScriptV1Reference from './ScriptV1Reference';
 import SystemIntegrationHub from './SystemIntegrationHub';
 
@@ -71,11 +70,6 @@ export default function CREsalesDashboard() {
 
         {/* Bottom Section: Weekly Metrics */}
         <WeeklyMetrics />
-
-        {/* Quick Actions Section */}
-        <div className="mt-6">
-          <CREQuickActions />
-        </div>
 
         {/* Footer Stats */}
         <footer className="mt-12 pt-8 border-t border-slate-700">

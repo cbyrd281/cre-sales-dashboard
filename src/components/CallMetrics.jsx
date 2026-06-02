@@ -4,9 +4,9 @@ import useDashboardStore from '../store/dashboardStore';
 export default function CallMetrics() {
   const { callsToday, callsThisWeek, connectionRate, meetingsSet, conversionRate } = useDashboardStore();
 
-  const dailyCalls = callsToday || 8;
+  const dailyCalls = callsToday || 0;
   const weeklyConnections = Math.round(dailyCalls * 5 * connectionRate);
-  const meetingsThisWeek = meetingsSet || 2;
+  const meetingsThisWeek = meetingsSet || 0;
   const conversionCount = Math.round(meetingsThisWeek * conversionRate);
 
   return (
@@ -27,7 +27,7 @@ export default function CallMetrics() {
               style={{ width: `${(dailyCalls / 20) * 100}%` }}
             />
           </div>
-          <p className="text-blue-200 text-xs mt-2">Goal: 20 dials/day</p>
+          <p className="text-blue-200 text-xs mt-2">Target: 55 calls/week (11/day)</p>
         </div>
 
         {/* Weekly Connections */}
@@ -53,7 +53,7 @@ export default function CallMetrics() {
               style={{ width: `${(meetingsThisWeek / 5) * 100}%` }}
             />
           </div>
-          <p className="text-blue-200 text-xs mt-2">Target: 5/week</p>
+          <p className="text-blue-200 text-xs mt-2">Target: 3-5/week</p>
         </div>
 
         {/* Conversion Rate */}
