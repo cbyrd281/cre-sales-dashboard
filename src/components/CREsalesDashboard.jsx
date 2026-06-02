@@ -5,6 +5,7 @@ import DealPipeline from './DealPipeline';
 import ScriptProgress from './ScriptProgress';
 import WeeklyMetrics from './WeeklyMetrics';
 import CREQuickActions from './CREQuickActions';
+import ScriptV1Reference from './ScriptV1Reference';
 
 export default function CREsalesDashboard() {
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -39,6 +40,11 @@ export default function CREsalesDashboard() {
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 py-8">
+        {/* Script Reference - Top Priority */}
+        <div className="mb-8">
+          <ScriptV1Reference />
+        </div>
+
         {/* Top Section: Call Metrics and Confidence */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
           <div className="md:col-span-2">
